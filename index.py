@@ -28,35 +28,639 @@ def mi_funcion():
     if cartas[0] and cartas[1] in cartas_validas:
         if rivales == 1:
             posicion_rival = str(input("¿Qué posición tiene tu rival? (bb/sb/btn): "))
+
             if posicion_rival == "bb" and posicion == "sb":
+
                 if bb in [20,21,22,23,24,25]:
+
                     if cartas[0][0] == "A" and cartas[1][0] == "A":
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "A" and cartas[1][0] == "K":
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "A" and cartas[1][0] == "Q":
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "A" and cartas[1][0] == "J":
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==True:
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==True:
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==True:
-                        print("Raise 3x")
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "7" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "6" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "5" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "4" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "3" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "2" and suited==True:
+                        return print("All-in")
                     
                     elif cartas[0][0] == "K" and cartas[1][0] == "K":
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "K" and cartas[1][0] == "Q":
-                        print("Raise 3x")
+                        return print("Raise 3x")
                     elif cartas[0][0] == "K" and cartas[1][0] == "J":
-                        print("Raise 3x")
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "9" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
 
-                        
                     elif cartas[0][0] == "Q" and cartas[1][0] == "Q":
-                        print("Raise 3x")
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
 
+                    elif cartas[0][0] == "J" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
 
+                    elif cartas[0][0] == "T" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "9" and cartas[1][0] == "9":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "8" and cartas[1][0] == "8":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "7" and cartas[1][0] == "7":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "7" and cartas[1][0] == "2":
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "6" and cartas[1][0] == "6":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "5" and cartas[1][0] == "5":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "4" and cartas[1][0] == "4":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "3" and cartas[1][0] == "3":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "2" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    else:
+                        return print("Check")
+                
+                if bb in [14,15,16,17,18,19]:
+
+                    if cartas[0][0] == "A" and cartas[1][0] == "A":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "K" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "Q" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "J" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==True:
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "A" and cartas[1][0] == "K" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "Q" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "J" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "7":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "6":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "5":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "4":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "3":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "K" and cartas[1][0] == "K":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "Q":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "9" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "Q":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "J" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "T" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "9" and cartas[1][0] == "9":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "8" and cartas[1][0] == "8":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "7" and cartas[1][0] == "7":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "7" and cartas[1][0] == "2":
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "6" and cartas[1][0] == "6":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "5" and cartas[1][0] == "5":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "4" and cartas[1][0] == "4":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "3" and cartas[1][0] == "3":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "2" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    else:
+                        return print("Check")
+
+                if bb in [9,10,11,12,13]:
+
+                    if cartas[0][0] == "A" and cartas[1][0] == "A":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "K" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "Q" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "J" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==True:
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "A" and cartas[1][0] == "K" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "Q" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "J" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "7":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "6":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "5":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "4":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "3":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "K" and cartas[1][0] == "K":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "Q":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "J" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "9" and suited==True:
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "K" and cartas[1][0] == "J" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "T" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "9" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "8" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "7" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "6" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "5" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "4":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "3":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "2":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "Q":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "J" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "T" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "9" and cartas[1][0] == "9":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "8" and cartas[1][0] == "8":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "7" and cartas[1][0] == "7":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "7" and cartas[1][0] == "2":
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "6" and cartas[1][0] == "6":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "5" and cartas[1][0] == "5":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "4" and cartas[1][0] == "4":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "3" and cartas[1][0] == "3":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "2" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    else:
+                        return print("Check")
+                    
+                if bb in [7,8]:
+
+                    if cartas[0][0] == "A" and cartas[1][0] == "A":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "K" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "Q" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "J" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==True:
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "A" and cartas[1][0] == "K" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "Q" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "J" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "T" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "9" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "8" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "7":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "6":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "5":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "4":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "3":
+                        return print("All-in")
+                    elif cartas[0][0] == "A" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "K" and cartas[1][0] == "K":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "Q":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "J" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "9" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "8" and suited==True
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "K" and cartas[1][0] == "J" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "T" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "9" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "8" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "7":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "6":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "5":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "4":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "3":
+                        return print("All-in")
+                    elif cartas[0][0] == "K" and cartas[1][0] == "2":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "Q":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "5" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "4" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "3" and suited==False:
+                        return print("All-in")
+                    elif cartas[0][0] == "Q" and cartas[1][0] == "2" and suited==False:
+                        return print("All-in")
+
+                    elif cartas[0][0] == "J" and cartas[1][0] == "J":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "T" and suited==True:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "5" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "T" and cartas[1][0] == "T":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "9" and cartas[1][0] == "9":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "4" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "8" and cartas[1][0] == "8":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "3" and suited==False:
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "2" and suited==False:
+                        return print("Raise 3x")
+
+                    elif cartas[0][0] == "7" and cartas[1][0] == "7":
+                        return print("Raise 3x")
+                    elif cartas[0][0] == "7" and cartas[1][0] == "2":
+                        return print("Raise 3x")
+                    
+                    elif cartas[0][0] == "6" and cartas[1][0] == "6":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "5" and cartas[1][0] == "5":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "4" and cartas[1][0] == "4":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "3" and cartas[1][0] == "3":
+                        return print("All-in")
+
+                    elif cartas[0][0] == "2" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    else:
+                        return print("Check")
+
+                if bb in [6,5,4,3,2,1]:
+
+                    if cartas[0][0] == "A" and cartas[1][0] != "A":
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "K" and cartas[1][0] != "K":
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "Q" and cartas[1][0] != "Q":
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "J" and cartas[1][0] == "T" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "J" and cartas[1][0] == "9" and suited==True:
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "T" and cartas[1][0] == "T":
+                        return print("All-in")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "9" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "T" and cartas[1][0] == "8" and suited==True:
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "9" and cartas[1][0] == "9":
+                        return print("All-in")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "8" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "9" and cartas[1][0] == "7" and suited==True:
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "8" and cartas[1][0] == "8":
+                        return print("All-in")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "7" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "8" and cartas[1][0] == "6" and suited==True:
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "7" and cartas[1][0] == "7":
+                        return print("All-in")
+                    elif cartas[0][0] == "7" and cartas[1][0] == "6" and suited==True:
+                        return print("All-in")
+                    elif cartas[0][0] == "7" and cartas[1][0] == "5" and suited==True:
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "6" and cartas[1][0] == "6":
+                        return print("All-in")
+                    elif cartas[0][0] == "6" and cartas[1][0] == "5" and suited==True:
+                        return print("All-in")
+                    
+                    elif cartas[0][0] == "5" and cartas[1][0] == "5":
+                        return print("All-in")
+                    elif cartas[0][0] == "4" and cartas[1][0] == "4":
+                        return print("All-in")
+                    elif cartas[0][0] == "3" and cartas[1][0] == "3":
+                        return print("All-in")
+                    elif cartas[0][0] == "2" and cartas[1][0] == "2":
+                        return print("All-in")
+                    
+                    else:
+                        return("Check")
+                    
             elif posicion_rival == "sb":
                 print("fold")
             elif posicion_rival == "btn":
